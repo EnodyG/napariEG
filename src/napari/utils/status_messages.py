@@ -5,9 +5,9 @@ import numpy.typing as npt
 
 
 def format_float(value):
-    """Nice float formatting into strings."""
+    settings = get_settings()
+    decimals = settings.application.decimal_precision
     return f"{value:.{decimals}f}"
-
 
 def status_format(value):
     """Return a "nice" string representation of a value.
