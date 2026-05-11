@@ -238,6 +238,14 @@ class ApplicationSettings(EventedModel):
             'If equal or greater than 1, it is interpreted as screen pixels.'
         ),
     )
+    
+    decimal_precision: int = Field(
+    default=3,
+    title=trans._('Decimal Precision'),
+    description=trans._(
+        'Number of decimal places used when displaying pixel values.'
+    ),
+)
 
     confirm_close_window: bool = Field(
         default=True,
