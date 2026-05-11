@@ -6,7 +6,7 @@ import numpy.typing as npt
 
 def format_float(value):
     """Nice float formatting into strings."""
-    return f'{value:0.3g}'
+    return f"{value:.{decimals}f}"
 
 
 def status_format(value):
