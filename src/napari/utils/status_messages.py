@@ -1,5 +1,5 @@
 from collections.abc import Iterable
-
+from napari.settings import get_settings
 import numpy as np
 import numpy.typing as npt
 
